@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="main" prefHeight="425.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXMLAplicacionController">
+   <children>
+      <VBox prefHeight="425.0" prefWidth="600.0">
+         <children>
+            <MenuBar prefHeight="25.0" prefWidth="620.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Cuenta">
+                  <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onvaciar" text="Vaciar datos" />
+                        <MenuItem mnemonicParsing="false" onAction="#onbaja" text="Dar de baja" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Datos">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#onvisualizar" text="Visualizar" />
+                        <MenuItem mnemonicParsing="false" onAction="#onañadir" text="Añadir" />
+                        <MenuItem mnemonicParsing="false" onAction="#onmodificar" text="Modificar" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Telefonos">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#onvisualizar2" text="Visualizar" />
+                        <MenuItem mnemonicParsing="false" onAction="#onañadir2" text="Agregar" />
+                        <MenuItem mnemonicParsing="false" onAction="#onmodificar2" text="Modificar" />
+                    </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="Archivos">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#onexportar" text="Exportar datos" />
+                        <MenuItem mnemonicParsing="false" onAction="#onimportar" text="Importar datos" />
+                        <MenuItem mnemonicParsing="false" onAction="#onexportar2" text="Exportar telefonos" />
+                        <MenuItem mnemonicParsing="false" onAction="#onimportar2" text="Importar telefonos" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Otros">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#onestadistica" text="Estadisticas" />
+                      <MenuItem mnemonicParsing="false" onAction="#oncontraseña" text="Consejos para contraseñas" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Ayuda">
+                     <items>
+                      <MenuItem mnemonicParsing="false" onAction="#onacerca" text="Acerca de" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Salir">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#onsalir" text="Salir" />
+                    </items>
+                  </Menu>
+              </menus>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </MenuBar>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

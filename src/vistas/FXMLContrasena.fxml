@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFC900;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXMLContrasenaController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label text="Recomendaciones para la creacion de contraseñas" textFill="#025072">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="39.0" prefWidth="600.0">
+               <children>
+                  <Label text="Seleccion :" textFill="#da0c0c">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ComboBox fx:id="c1" onAction="#oncambiar" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <WebView fx:id="wb1" fontScale="0.5" prefHeight="319.0" prefWidth="600.0" />
+         </children>
+      </VBox>
+   </children>
+</Pane>

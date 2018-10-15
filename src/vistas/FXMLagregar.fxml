@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FF9900;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXMLagregarController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label text="Agregar Contraseñas Nuevas" textFill="#025072">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="40.0" left="120.0" top="40.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="56.0" prefWidth="600.0">
+               <children>
+                  <Label text="URL :" textFill="#025072">
+                     <HBox.margin>
+                        <Insets left="150.0" top="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txt1" stylesheets="@../css/txtstyle.css">
+                     <HBox.margin>
+                        <Insets left="30.0" top="15.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="56.0" prefWidth="600.0">
+               <children>
+                  <Label text="Usuario :" textFill="#025072">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="120.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txt2" stylesheets="@../css/txtstyle.css">
+                     <HBox.margin>
+                        <Insets left="30.0" top="15.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="56.0" prefWidth="600.0">
+               <children>
+                  <Label text="Contraseña :" textFill="#025072">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="90.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <PasswordField fx:id="txt3" stylesheets="@../css/txtstyle.css">
+                     <HBox.margin>
+                        <Insets left="30.0" top="15.0" />
+                     </HBox.margin>
+                  </PasswordField>
+                  <TextField fx:id="txt4" stylesheets="@../css/txtstyle.css">
+                     <HBox.margin>
+                        <Insets left="30.0" top="15.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <CheckBox fx:id="ch1" mnemonicParsing="false" onAction="#onver" text="Ver" textFill="#025072">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="18.0" />
+                     </HBox.margin>
+                  </CheckBox>
+               </children>
+            </HBox>
+            <VBox prefHeight="117.0" prefWidth="600.0">
+               <children>
+                  <Label fx:id="lb1" text=" " textAlignment="CENTER" textFill="#a40b0b">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="150.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#onagregar" text="Agregar" textFill="#025072">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="250.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

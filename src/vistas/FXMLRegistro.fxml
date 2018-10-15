@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FF9900;" stylesheets="@../css/txtstyle.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXMLRegistroController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label text="Registro" textFill="#025072">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="25.0" left="250.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="51.0" prefWidth="600.0">
+               <children>
+                  <Label text="Ingrese usuario :" textFill="#025072">
+                     <HBox.margin>
+                        <Insets left="160.0" top="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtusu">
+                     <HBox.margin>
+                        <Insets left="50.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="51.0" prefWidth="600.0">
+               <children>
+                  <Label text="Ingrese Contraseña :" textFill="#025072">
+                     <HBox.margin>
+                        <Insets left="130.0" top="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="txtpass">
+                     <HBox.margin>
+                        <Insets left="50.0" top="20.0" />
+                     </HBox.margin>
+                  </PasswordField>
+               </children>
+            </HBox>
+            <HBox prefHeight="51.0" prefWidth="600.0">
+               <children>
+                  <Label text="Ingrese Contraseña nuevamente :" textFill="#025072">
+                     <HBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="txtpass2">
+                     <HBox.margin>
+                        <Insets left="50.0" top="20.0" />
+                     </HBox.margin>
+                  </PasswordField>
+               </children>
+            </HBox>
+            <HBox prefHeight="51.0" prefWidth="600.0">
+               <children>
+                  <Label text="Ingrese segunda Contraseña :" textFill="#025072">
+                     <HBox.margin>
+                        <Insets left="60.0" top="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="txtpass3">
+                     <HBox.margin>
+                        <Insets left="50.0" top="20.0" />
+                     </HBox.margin>
+                  </PasswordField>
+               </children>
+            </HBox>
+            <Button fx:id="registro" mnemonicParsing="false" onAction="#onregistro" text="Registrarse" textFill="BLUE">
+               <VBox.margin>
+                  <Insets left="250.0" top="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

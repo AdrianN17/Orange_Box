@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="604.0" prefWidth="333.0" style="-fx-background-color: #FF9900;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXMLLoginController">
+   <children>
+      <VBox prefHeight="601.0" prefWidth="333.0">
+         <children>
+            <Label text="Login" textFill="#025072">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="120.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="63.0" prefWidth="333.0">
+               <children>
+                  <Label text="Usuario :" textFill="#025072">
+                     <HBox.margin>
+                        <Insets left="80.0" top="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtusuario" stylesheets="@../css/txtstyle.css">
+                     <HBox.margin>
+                        <Insets left="10.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="63.0" prefWidth="333.0">
+               <children>
+                  <Label text="Contraseña :" textFill="#025072">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="50.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <PasswordField fx:id="txtcontraseña" stylesheets="@../css/txtstyle.css">
+                     <HBox.margin>
+                        <Insets left="10.0" top="20.0" />
+                     </HBox.margin>
+                  </PasswordField>
+               </children>
+            </HBox>
+            <HBox prefHeight="63.0" prefWidth="333.0">
+               <children>
+                  <Label text="2da Contraseña :" textFill="#025072">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <PasswordField fx:id="txtcontraseña2" stylesheets="@../css/txtstyle.css">
+                     <HBox.margin>
+                        <Insets left="10.0" top="20.0" />
+                     </HBox.margin>
+                  </PasswordField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="333.0">
+               <children>
+                  <Button fx:id="b1" mnemonicParsing="false" onAction="#onb1" prefHeight="30.0" prefWidth="40.0" stylesheets="@../css/btnstyle.css" text=" " textFill="RED">
+                     <HBox.margin>
+                        <Insets left="80.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="b2" mnemonicParsing="false" onAction="#onb2" prefHeight="30.0" prefWidth="40.0" stylesheets="@../css/btnstyle.css" text=" " textFill="RED">
+                     <HBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="b3" mnemonicParsing="false" onAction="#onb3" prefHeight="30.0" prefWidth="40.0" stylesheets="@../css/btnstyle.css" text=" " textFill="RED">
+                     <HBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="333.0">
+               <children>
+                  <Button fx:id="b4" mnemonicParsing="false" onAction="#onb4" prefHeight="30.0" prefWidth="40.0" stylesheets="@../css/btnstyle.css" text=" " textFill="RED">
+                     <HBox.margin>
+                        <Insets left="80.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="b5" mnemonicParsing="false" onAction="#onb5" prefHeight="30.0" prefWidth="40.0" stylesheets="@../css/btnstyle.css" text=" " textFill="RED">
+                     <HBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="b6" mnemonicParsing="false" onAction="#onb6" prefHeight="30.0" prefWidth="40.0" stylesheets="@../css/btnstyle.css" text=" " textFill="RED">
+                     <HBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="333.0">
+               <children>
+                  <Button fx:id="b7" mnemonicParsing="false" onAction="#onb7" prefHeight="30.0" prefWidth="40.0" stylesheets="@../css/btnstyle.css" text=" " textFill="RED">
+                     <HBox.margin>
+                        <Insets left="80.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="b8" mnemonicParsing="false" onAction="#onb8" prefHeight="30.0" prefWidth="40.0" stylesheets="@../css/btnstyle.css" text=" " textFill="RED">
+                     <HBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="b9" mnemonicParsing="false" onAction="#onb9" prefHeight="30.0" prefWidth="40.0" stylesheets="@../css/btnstyle.css" text=" " textFill="RED">
+                     <HBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="333.0">
+               <children>
+                  <Button fx:id="b0" mnemonicParsing="false" onAction="#onb0" prefHeight="30.0" prefWidth="40.0" stylesheets="@../css/btnstyle.css" text=" " textFill="RED">
+                     <HBox.margin>
+                        <Insets left="80.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#onborrar" prefHeight="30.0" prefWidth="110.0" stylesheets="@../css/btnstyle.css" text="Borrar" textFill="RED">
+                     <HBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="ingresar" mnemonicParsing="false" onAction="#oningresar" text="Ingresar" textFill="BLUE">
+                     <HBox.margin>
+                        <Insets left="50.0" top="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#onregistro" text="Registrarse" textFill="BLUE">
+                     <HBox.margin>
+                        <Insets left="60.0" top="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
